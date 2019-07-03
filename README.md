@@ -1,92 +1,36 @@
-# React-Redux with Sagas
+# Feedback Application
 
-> **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
+Project Description can be here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla eleifend consequat. Nulla sed eros ante. Curabitur ultricies in orci at maximus. Nam feugiat justo nec neque maximus condimentum. 
 
-For this weekend challenge you'll be building a mindfulness application: an image carousel tagging app!  
-
-## Database Setup
-
-1. Create a database named `saga_weekend`
-2. Run the queries from `database.sql` on the `saga_weekend` database.
-3. You will need to create the junction table between the `images` and `tags` tables! Your app will be populating this new table.
-
-## Install Dependencies
-
-1. `npm install`
-2. `npm run server`
-3. `npm run client`
-
-## Notes
-
-### Tags
-
-We've given you some starter tags in the database. Feel free to change or add some with Postico.
- 
- ### Images
- We've added some abstract images in the `public/images` folder, and the database is set up to use them.
-
- ### Relationships
- Tags can be applied to many different images. Images can have multiple tags. This is Many-to-Many! Junction Table time!
- 
-
-**Do not implement image upload for base mode.**
+Donec convallis sit amet leo non laoreet. Mauris luctus auctor erat, vitae pretium dolor bibendum vel. Ut a ante vel ante sagittis sollicitudin sed quis nunc. Curabitur semper bibendum urna, non blandit erat hendrerit nec.
 
 
-## Feature List
+## Local Installation Directions
 
-> NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
+- Fork this repository,
+- Clone contents within your terminal:
+   - `git clone <repoUrl.git>`
+- Navigate into the project directory:
+   - `cd projectFolderName`
+- Install dependencies:
+   - `npm install`
+- Run the server:
+   - `npm run server`
+- Build and run the client:
+   - `npm run client`
 
-## Back-End
+(Note that the above is an example. Give specific directions.)
 
-### Database
-- [x] Create Tag, Image tables 
-- [ ] Create a Junction Table for storing the tags associated with the images
+## Reflection of Learning
 
-### Routes
-Feel free to make up your own. You may need others beyond these:
+When did this project occur?
+   - Example: This project occurred during our 6th week of the classroom.
 
-- [ ] GET `/api/tags` -- Should return all tags
-- [ ] GET `/api/images` -- Should return all images and the tags associated with each image (JOIN!)
-- [ ] POST `/api/images/addtag` -- Should add a tag associated with an image to your junction table.
+What did you learn from the project? Technology? Pattern?
+   - Example: This assignment covered handling click events within React. In doing so, we got the opportunity to explore how currying works to pass information about what was clicked, to the logic that handles the click. This became helpful because to date, we had been creating individual click handler methods for each interactive element, rather than being efficient and creating one method that could handle all of them.
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-## Front-End
-
-### Carousel 
-
-** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH (MUI STEPPER) THING **
-
-You can build this! Other components from Material-UI are fine.
-
-- [ ] Client-side view that displays a single image at a time, using data from database.
-- [ ] Each image should have an ability to cycle through to the next/previous image. These should always work -- if you hit next on the last picture, it should go to the first image.
-- [ ] With each image, users should be able to assign tags to the current image and save in the database. For base mode, duplicate tags are fine.
-- [ ] Use Sagas for API requests to your server
-
-
-### General Tasks
-
-- [ ] Commit your code frequently! You should have at 15+ commits on a project of this size. Use branches to help break down your features.
-- [ ] Comment your code.
-- [ ] Update this README to include a description of the project in your own words.
-
-## Wireframes
-
-> NOTE: Feel free to modify the styling and layout of content on the page. 
-
-### Main View
-
-<img src="wireframes/carousel-page.png" width="800">
-
-
-## Stretch Goals
-
-- [ ] Animate it -- Look into transitions -- give us a nice fade in/out, or slide in, or something aesthetically pleasing
-- [ ] Allow users to delete tags from an image.
-- [ ] Give each tag associated to an image a different color
-- [ ] Improve styling on the page using Material UI
-  - [ ] Make it Responsive (Research Grid)
-  - [ ] Give it a theme
-- [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
-- [ ] Implement a form to add new tags and/or images
-
+## Questions? I would love to connect!
+Email - [devonamitchell10@gmail.com](mailto:devonamitchell10@gmail.com)
